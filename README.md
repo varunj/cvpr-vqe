@@ -9,6 +9,9 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 `wget https://ic3mi.z22.web.core.windows.net/vqe/test.tar.gz`
 `mkdir train; tar -zxf train.tar.gz -C train/`
 `mkdir test; tar -zxf test.tar.gz -C test/`
+Post extraction
+- train should be 139 GB (149,828,544,192 B), 460,600 files
+- test should be 42.7 GB (45,944,510,680 B), 153,000 files
 
 ### Pretrained Models
 `cd data`
