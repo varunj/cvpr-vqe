@@ -21,6 +21,12 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 `conda activate vqe`
 `mamba env update -f conda/env.gpu.yml`
 
+## Baseline
+We provide a baseline solution so that participants can reproduce the AutoAdjust feature as currently shipped in Microsoft Teams.
+`cd baseline`
+`python baseline.py --dir_in <path to directory with input mp4 videos> --dir_out <path to result directory>`
+
+
 
 ## Training
 
