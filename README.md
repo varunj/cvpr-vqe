@@ -2,6 +2,25 @@
 Official repository for the first Challenge on Video Quality Enhancement for Video Conferencing held at the NTIRE Workshop at CVPR 2025.
 
 
+## Setup
+### Data
+`wget https://ic3mi.z22.web.core.windows.net/vqe/train.tar.gz`
+`wget https://ic3mi.z22.web.core.windows.net/vqe/test.tar.gz`
+
+### Pretrained Models
+`wget https://ic3mi.z22.web.core.windows.net/vqe/VQA.ckpt`
+`wget https://ic3mi.z22.web.core.windows.net/vqe/DOVER.pth`
+
+### Environment
+`conda install -y mamba=1.3.1 -n base -c conda-forge`
+`conda create -n vqe python=3.8`
+`conda activate vqe`
+`mamba env update -f conda/env.gpu.yml`
+
+
+## Training
+
+
 ## Scoring
 Remember that final ranking will be based on P.910 scores. However, for continuous & independent evaluation, teams can track their objective metrics by submitting `metrics_supervised.csv` and `metrics_unsupervised.csv` to CodaLab in a zip.
 
