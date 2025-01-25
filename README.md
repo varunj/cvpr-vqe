@@ -34,6 +34,8 @@ To extract frames from videos and make CSVs, run the following command:
 ## Baseline
 We provide a baseline solution so that participants can reproduce the AutoAdjust feature as currently shipped in Microsoft Teams.
 `cd baseline`
+`wget https://ic3mi.z22.web.core.windows.net/vqe/autoadjust_bin_win-x64.tar.gz`
+`tar -zxf autoadjust_bin_win-x64.tar.gz -C .`
 `python baseline.py --dir_in <path to directory with input mp4 videos> --dir_out <path to result directory>`
 
 
