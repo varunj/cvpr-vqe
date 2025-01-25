@@ -21,9 +21,10 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 ## Training
 
 
-## Scoring
-Remember that final ranking will be based on P.910 scores. However, for continuous & independent evaluation, teams can track their objective metrics by submitting `metrics_supervised.csv` and `metrics_unsupervised.csv` to CodaLab in a zip.
+## Evaluation
+Remember that final rankings will be based on P.910 scores. It is important to join the Slack workspace where organizers will provide instructions on how to submit the 3000 enhanced videos. The joining link can be found in the CodaLab forum (https://codalab.lisn.upsaclay.fr/forums/21235/).
 
+However, for continuous & independent evaluation, teams can track their objective metrics by submitting `metrics_supervised.csv` and `metrics_unsupervised.csv` to CodaLab in a zip.
 The metric m used to rank is a combination of
 1. For 3000 unsupervised videos: VQA score v & 11 auxiliary scores a1 ... a11
 3. For 500 supervised videos: RMSE on synthetic data r
