@@ -17,7 +17,7 @@ Post extraction
 
 To extract frames from videos and make CSVs, run the following command:
 `cd vqe`
-`python dataset_builder.py --config-name data/all_15 data.source_dir=<path to data/>`
+`python dataset_builder.py --config-name data/all_15fps data.source_dir=<path to data/>`
 
 ### Pretrained Models
 `cd data`
