@@ -4,10 +4,14 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 
 ## Setup
 ### Data
+`mkdir data; cd data`
 `wget https://ic3mi.z22.web.core.windows.net/vqe/train.tar.gz`
 `wget https://ic3mi.z22.web.core.windows.net/vqe/test.tar.gz`
+`mkdir train; tar -zxf train.tar.gz -C train/`
+`mkdir test; tar -zxf test.tar.gz -C test/`
 
 ### Pretrained Models
+`cd data`
 `wget https://ic3mi.z22.web.core.windows.net/vqe/VQA.ckpt`
 `wget https://ic3mi.z22.web.core.windows.net/vqe/DOVER.pth`
 
@@ -32,6 +36,6 @@ The metric m used to rank is a combination of
 `m = [(v+a1+a2+a3+(1-a4)+a5+a6+a7+a8+a9+a10+a11)/12]/r`
 
 You can check your score offline by running:
-``` 
+```
 python codalab_scoring/score.py --results codalab_scoring/sample_submission
 ```
