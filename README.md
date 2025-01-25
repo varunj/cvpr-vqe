@@ -2,6 +2,8 @@
 Official repository for the first Challenge on Video Quality Enhancement for Video Conferencing held at the NTIRE Workshop at CVPR 2025.
 
 
+
+---
 ## Setup
 ### Data
 `mkdir data; cd data`
@@ -12,6 +14,10 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 Post extraction
 - train should be 139 GB (149,828,544,192 B), 460,600 files
 - test should be 42.7 GB (45,944,510,680 B), 153,000 files
+
+To extract frames from videos and make CSVs, run the following command:
+`cd vqe`
+`python dataset_builder.py --config-name data/all_15 data.source_dir=<path to data/>`
 
 ### Pretrained Models
 `cd data`
@@ -24,19 +30,23 @@ Post extraction
 `conda activate vqe`
 `mamba env update -f conda/env.gpu.yml`
 
+---
 ## Baseline
 We provide a baseline solution so that participants can reproduce the AutoAdjust feature as currently shipped in Microsoft Teams.
 `cd baseline`
 `python baseline.py --dir_in <path to directory with input mp4 videos> --dir_out <path to result directory>`
 
 
-
+---
 ## Training
 
 
+---
 ## Evaluation
+### Subjective
 Remember that final rankings will be based on P.910 scores. It is important to join the Slack workspace where organizers will provide instructions on how to submit the 3000 enhanced videos. The joining link can be found in the CodaLab forum (https://codalab.lisn.upsaclay.fr/forums/21235/).
 
+### Objective
 However, for continuous & independent evaluation, teams can track their objective metrics by submitting `metrics_supervised.csv` and `metrics_unsupervised.csv` to CodaLab in a zip.
 The metric m used to rank is a combination of
 1. For 3000 unsupervised videos: VQA score v & 11 auxiliary scores a1 ... a11
