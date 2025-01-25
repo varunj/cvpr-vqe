@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+project.xcworkspace/
+xcuserdata/
+data/
+outputs/
+*.pyc
+*.pth
+*.png
+*.xcuserstate
