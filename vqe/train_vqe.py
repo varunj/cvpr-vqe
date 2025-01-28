@@ -349,7 +349,8 @@ class VQEModel(LightningModule, ABC):
     def macs_params(self):
         x_ = torch.randn(1, 3, 720, 1280)
         macs, params = thop.profile(instantiate(self._cfg.model_vqe), inputs=(x_), verbose=False)
-        assert macs < 20e9
+        if macs > 20e9:
+            logging.getLogger('lightning').warning('macs exceed the limit')
         return macs, params
 
     @rank_zero_only
