@@ -1,0 +1,61 @@
+experiment: vqe
+
+detect_anomaly: false
+cudnn_benchmark: true
+gpus: '-1'
+distributed_backend: ddp
+precision: 16
+amp_backend: native
+num_sanity_val_steps: 0
+only_validation: false
+graph_every_n_epochs: 10
+
+# default values
+defaults:
+  - dataset: vqe
+  - augmentation: policy_sample
+  - model_vqe: sample_vqe_model
+  - model_vqa: unetlite_relu6
+  - model_dover: dover
+  - dataloader: default
+  - optimizer: adamw
+  - scheduler: onecycle
+  - loss: mse
+  - early_stopping: on_val_loss
+  - _self_
+
+dataset:
+  height: 368
+  width: 640
+
+dataloader:
+  batch_size: 32
+
+optimizer:
+  weight_decay: 0.0001
+
+early_stopping:
+  patience: 512
+
+max_epochs: 1
+lr: 0.0008
+
+scheduler:
+  epochs: ${max_epochs}
+  max_lr: ${lr}
+  pct_start: 0.05
+
+onnx_export: true
+progress_bar_refresh_rate: 1
+tb_logger: true
+
+checkpoint: null
+resume_from: latest_state_for_training_resume
+val_check_interval: 1.0
+
+auto_lr_find: false
+gradient_clip_val: null
+gradient_clip_algorithm: value
+
+result_csv_supervised: metrics_supervised.csv
+result_csv_unsupervised: metrics_unsupervised.csv

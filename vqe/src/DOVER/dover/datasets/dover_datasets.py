@@ -227,15 +227,15 @@ def get_single_view(
 
 
 def spatial_temporal_view_decomposition_for_images(
-    path_imgs, sample_types, samplers, num,
+    images, sample_types, samplers, num,
     is_train=False, augment=False,
 ):
-    # todo: parse video instead
     video = {}
     all_frame_inds = []
-    # [h, w, 3] torch.uint8
-    vreader = [cv2.imread(path_imgs) for _ in range(num)]
-    vreader = [torch.from_numpy(x) for x in vreader]
+    images = (images * 128.) + 128.
+    images = images.to(torch.uint8)
+    images = images.permute(1, 2, 0)
+    vreader = [images for _ in range(num)]
     frame_inds = {}
     for stype in samplers:
         frame_inds[stype] = samplers[stype](num, is_train)

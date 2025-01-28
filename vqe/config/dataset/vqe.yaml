@@ -1,0 +1,9 @@
+path: /data/vqe
+train: train.csv
+train_query: null
+valid: test.csv
+valid_query: null
+holdout: test.csv
+holdout_query: null
+height: ???
+width: ???

@@ -1,0 +1,5 @@
+_target_: src.model_vqe.Sample
+weights: null
+ideal_height: 0
+ideal_width: 0
+input_channels: 3

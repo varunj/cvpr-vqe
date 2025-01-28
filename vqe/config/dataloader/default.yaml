@@ -1,0 +1,5 @@
+batch_size: ??? # batch_size should fit GPU memory size
+pin_memory: false
+num_workers: ??? # num_workers should fit CPU cores/threads
+multiprocessing_context: fork
+seed: 0

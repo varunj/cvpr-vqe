@@ -1,0 +1,70 @@
+_target_: src.model_vqa.UnetLite
+
+weights: null
+over_parametrize: 0
+ideal_height: 0
+ideal_width: 0
+
+input_channels: 3
+
+fc_dropout: 0.0
+
+level:
+  -
+    encoder:
+      m1_blocks: [32, 32]
+      activation: relu6
+      se_block:
+        hidden: 64
+        bn: True
+        mid_activation: relu6
+        final_bn: False
+        scale_activation: relu6
+    downsample: avgpool
+    skip_mix: sum
+  -
+    encoder:
+      m1_blocks: [64, 64]
+      activation: relu6
+      se_block:
+        hidden: 128
+        bn: True
+        mid_activation: relu6
+        final_bn: False
+        scale_activation: relu6
+    downsample: avgpool
+    skip_mix: sum
+  -
+    encoder:
+      m1_blocks: [128, 128, 128]
+      activation: relu6
+      se_block:
+        hidden: 256
+        bn: True
+        mid_activation: relu6
+        final_bn: False
+        scale_activation: relu6
+    downsample: avgpool
+    skip_mix: sum
+  -
+    encoder:
+      m1_blocks: [256, 256, 256]
+      activation: relu6
+      se_block:
+        hidden: 512
+        bn: True
+        mid_activation: relu6
+        final_bn: False
+        scale_activation: relu6
+    downsample: avgpool
+    skip_mix: sum
+  -
+    encoder:
+      m1_blocks: [512, 512, 512]
+      activation: relu6
+      se_block:
+        hidden: 1024
+        bn: True
+        mid_activation: relu6
+        final_bn: False
+        scale_activation: relu6

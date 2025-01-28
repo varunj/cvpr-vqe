@@ -1,4 +1,5 @@
 name: DOVER
+weights: null
 num_epochs: 0
 l_num_epochs: 10
 warmup_epochs: 2.5
