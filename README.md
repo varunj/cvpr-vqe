@@ -4,6 +4,7 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 
 ## Setup
 ### Data
+To download individual subsets, please refer to the URLs on the [CodaLab webpage](https://codalab.lisn.upsaclay.fr/competitions/21291#learn_the_details-terms_and_conditions:~:text=%5B3%5D.-,Training,-data%20can%20be).
 ```
 mkdir data; cd data
 wget https://ic3mi.z22.web.core.windows.net/vqe/train.tar.gz
