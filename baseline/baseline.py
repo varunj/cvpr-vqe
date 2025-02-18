@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import glob
 import subprocess
+import multiprocessing as mp
 
 
 def execute_command(cmd, max_attempts=3):
@@ -26,17 +27,13 @@ def run_baseline(args):
         assert False
 
 
-def convert_files(args):
-    # convert saved .avi file to .mp4
-    files = glob.glob(f'{Path(args.dir_out) / "*.avi"}')
-    for f in files:
-        path_in = Path(f)
-        path_out = path_in.parent / f'{path_in.stem}.mp4'
-        cmd = f'ffmpeg -i "{path_in}" -c:v libx264 -crf 19 -vf format=yuvj420p -preset veryslow "{path_out}"'
-        status = execute_command(cmd)
-        if status == -1:
-            assert False
-        os.remove(path_in)
+def convert_worker(file):
+    path_in = Path(file)
+    path_out = path_in.parent / f'{path_in.stem}.mp4'
+    cmd = f'ffmpeg -i "{path_in}" -c:v libx264 -crf 19 -vf format=yuvj420p -preset veryslow "{path_out}"'
+    status = execute_command(cmd)
+    os.remove(path_in)
+    return status
 
 
 if __name__ == '__main__':
@@ -45,5 +42,12 @@ if __name__ == '__main__':
     parser.add_argument('--dir_out', type=str, required=True, help='path to result')
     args, unknown = parser.parse_known_args()
 
+    # AutoAdjustCmdTool writes .avi
     run_baseline(args)
-    convert_files(args)
+
+    # convert saved .avi file to .mp4
+    files = glob.glob(f'{Path(args.dir_out) / "*.avi"}')
+    with mp.Pool(processes=4) as mp_pool:
+        status = mp_pool.imap_unordered(convert_worker, files)
+        for stat in status:
+            assert stat == 0
