@@ -34,7 +34,7 @@ def worker(idx: int):
     os.makedirs(path_root, exist_ok=True)
     log = logging.getLogger(f'ds.build.{video}')
     log.info(f'extracting {video}')
-    cmd = f'ffmpeg -i {video} -vf fps={worker.fps} {path_root}/frame_%04d.jpg'
+    cmd = f'ffmpeg -i {video} -vf fps={worker.fps} {path_root}/frame_%04d.png'
     status = execute_command(cmd)
     if status == -1:
         assert False
@@ -93,19 +93,19 @@ def dataset_builder(cfg: DictConfig):
     # process train paired data
     train_sup_synth_x = glob.glob(f'{source_dir}/train/supervised/synthetic/video_*/x/*jpg')
     train_sup_synth_y = glob.glob(f'{source_dir}/train/supervised/synthetic/video_*/y/*jpg')
-    train_sup_real_x = glob.glob(f'{source_dir}/train/supervised/real/video_*/x/*jpg')
-    train_sup_real_y = glob.glob(f'{source_dir}/train/supervised/real/video_*/y/*jpg')
+    train_sup_real_x = glob.glob(f'{source_dir}/train/supervised/real/video_*/x/*png')
+    train_sup_real_y = glob.glob(f'{source_dir}/train/supervised/real/video_*/y/*png')
     assert len(train_sup_synth_x) == len(train_sup_synth_y)
     assert len(train_sup_real_x) == len(train_sup_real_y)
     # process train unpaired data
-    train_unsup_x = glob.glob(f'{source_dir}/train/unsupervised/video_*/x/*jpg')
+    train_unsup_x = glob.glob(f'{source_dir}/train/unsupervised/video_*/x/*png')
 
     # process test paired data
     test_sup_synth_x = glob.glob(f'{source_dir}/test/supervised/synthetic/video_*/x/*jpg')
     test_sup_synth_y = glob.glob(f'{source_dir}/test/supervised/synthetic/video_*/y/*jpg')
     assert len(test_sup_synth_x) == len(test_sup_synth_y)
     # process test unpaired data
-    test_unsup_x = glob.glob(f'{source_dir}/test/unsupervised/video_*/x/*jpg')
+    test_unsup_x = glob.glob(f'{source_dir}/test/unsupervised/video_*/x/*png')
 
 
     # 3. make dataframes
