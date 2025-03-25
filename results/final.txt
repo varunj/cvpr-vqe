@@ -1,0 +1,37 @@
+[each hiit has 30 votes] [read] got 3760/4500 = 83.56% hiits
+[each hiit has 30 votes] [dura] got 3760/4500 = 83.56% hiits post session length filter of >300s
+[each hiit has 30 votes] [gold] got 3760/4500 = 83.56% hiits post removing hiits with gold question failure
+[each hiit has 30 votes] [trap] got 3743/4500 = 83.18% hiits post removing workers who failed trap question at thresh=-0.5
+got 0 duplicate verification codes
+
+--------- per-experiment stats ---------
+BA_MA       : nos=5853, DMOS=2.81, median=2.0, ci_95%=±0.03017, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.06
+BA_LU       : nos=5719, DMOS=2.73, median=2.0, ci_95%=±0.02842, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.07
+BA_WI       : nos=4066, DMOS=2.50, median=2.0, ci_95%=±0.03665, p(colors)=0.17, p(brightness)=0.17, p(skintone)=0.12
+BA_TM       : nos=5840, DMOS=3.76, median=4.0, ci_95%=±0.02440, p(colors)=0.17, p(brightness)=0.22, p(skintone)=0.08
+BA_JG       : nos=5797, DMOS=3.52, median=4.0, ci_95%=±0.02822, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.07
+IN_BA       : nos=5708, DMOS=3.60, median=4.0, ci_95%=±0.02883, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.06
+IN_MA       : nos=5836, DMOS=3.49, median=4.0, ci_95%=±0.02760, p(colors)=0.17, p(brightness)=0.20, p(skintone)=0.06
+IN_LU       : nos=5829, DMOS=3.37, median=4.0, ci_95%=±0.03063, p(colors)=0.16, p(brightness)=0.20, p(skintone)=0.08
+IN_WI       : nos=4343, DMOS=2.87, median=2.0, ci_95%=±0.04029, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.14
+IN_TM       : nos=5816, DMOS=3.93, median=4.0, ci_95%=±0.02623, p(colors)=0.16, p(brightness)=0.23, p(skintone)=0.08
+IN_JG       : nos=5845, DMOS=3.77, median=4.0, ci_95%=±0.02781, p(colors)=0.15, p(brightness)=0.23, p(skintone)=0.07
+MA_LU       : nos=5811, DMOS=2.97, median=3.0, ci_95%=±0.02745, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.07
+MA_WI       : nos=4260, DMOS=2.64, median=2.0, ci_95%=±0.03756, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.12
+MA_TM       : nos=5777, DMOS=3.82, median=4.0, ci_95%=±0.02528, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.08
+MA_JG       : nos=5879, DMOS=3.65, median=4.0, ci_95%=±0.02706, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.07
+LU_WI       : nos=4313, DMOS=2.75, median=2.0, ci_95%=±0.03571, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.11
+LU_TM       : nos=5714, DMOS=3.87, median=4.0, ci_95%=±0.02355, p(colors)=0.17, p(brightness)=0.22, p(skintone)=0.08
+LU_JG       : nos=5803, DMOS=3.69, median=4.0, ci_95%=±0.02680, p(colors)=0.16, p(brightness)=0.21, p(skintone)=0.07
+WI_TM       : nos=4199, DMOS=3.91, median=4.0, ci_95%=±0.03251, p(colors)=0.17, p(brightness)=0.20, p(skintone)=0.11
+WI_JG       : nos=4078, DMOS=3.80, median=4.0, ci_95%=±0.03214, p(colors)=0.18, p(brightness)=0.20, p(skintone)=0.11
+TM_JG       : nos=5804, DMOS=2.70, median=2.0, ci_95%=±0.03067, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.08
+
+--------- per-method bradley terry scores ---------
+TMobilerestore  : vote=3.64, color=2.81, brightness=3.78, skintone=2.51
+JGao            : vote=2.36, color=2.00, brightness=2.80, skintone=1.61
+BAseline        : vote=1.12, color=1.14, brightness=1.03, skintone=1.76
+MAqic           : vote=0.82, color=0.95, brightness=0.81, skintone=1.23
+LUt             : vote=0.71, color=0.78, brightness=0.70, skintone=0.68
+WIzard          : vote=0.43, color=0.35, brightness=0.53, skintone=0.13
+INputs          : vote=0.42, color=0.60, brightness=0.30, skintone=1.33
