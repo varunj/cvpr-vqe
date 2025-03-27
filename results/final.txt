@@ -1,37 +1,37 @@
-[each hiit has 30 votes] [read] got 3760/4500 = 83.56% hiits
-[each hiit has 30 votes] [dura] got 3760/4500 = 83.56% hiits post session length filter of >300s
-[each hiit has 30 votes] [gold] got 3760/4500 = 83.56% hiits post removing hiits with gold question failure
-[each hiit has 30 votes] [trap] got 3743/4500 = 83.18% hiits post removing workers who failed trap question at thresh=-0.5
+[each hiit has 30 votes] [read] got 4610/4500 = 102.44% hiits
+[each hiit has 30 votes] [dura] got 4610/4500 = 102.44% hiits post session length filter of >300s
+[each hiit has 30 votes] [gold] got 4610/4500 = 102.44% hiits post removing hiits with gold question failure
+[each hiit has 30 votes] [trap] got 4586/4500 = 101.91% hiits post removing workers who failed trap question at thresh=-0.5
 got 0 duplicate verification codes
 
 --------- per-experiment stats ---------
-BA_MA       : nos=5853, DMOS=2.81, median=2.0, ci_95%=±0.03017, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.06
-BA_LU       : nos=5719, DMOS=2.73, median=2.0, ci_95%=±0.02842, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.07
-BA_WI       : nos=4066, DMOS=2.50, median=2.0, ci_95%=±0.03665, p(colors)=0.17, p(brightness)=0.17, p(skintone)=0.12
-BA_TM       : nos=5840, DMOS=3.76, median=4.0, ci_95%=±0.02440, p(colors)=0.17, p(brightness)=0.22, p(skintone)=0.08
-BA_JG       : nos=5797, DMOS=3.52, median=4.0, ci_95%=±0.02822, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.07
-IN_BA       : nos=5708, DMOS=3.60, median=4.0, ci_95%=±0.02883, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.06
-IN_MA       : nos=5836, DMOS=3.49, median=4.0, ci_95%=±0.02760, p(colors)=0.17, p(brightness)=0.20, p(skintone)=0.06
-IN_LU       : nos=5829, DMOS=3.37, median=4.0, ci_95%=±0.03063, p(colors)=0.16, p(brightness)=0.20, p(skintone)=0.08
-IN_WI       : nos=4343, DMOS=2.87, median=2.0, ci_95%=±0.04029, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.14
-IN_TM       : nos=5816, DMOS=3.93, median=4.0, ci_95%=±0.02623, p(colors)=0.16, p(brightness)=0.23, p(skintone)=0.08
-IN_JG       : nos=5845, DMOS=3.77, median=4.0, ci_95%=±0.02781, p(colors)=0.15, p(brightness)=0.23, p(skintone)=0.07
-MA_LU       : nos=5811, DMOS=2.97, median=3.0, ci_95%=±0.02745, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.07
-MA_WI       : nos=4260, DMOS=2.64, median=2.0, ci_95%=±0.03756, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.12
-MA_TM       : nos=5777, DMOS=3.82, median=4.0, ci_95%=±0.02528, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.08
-MA_JG       : nos=5879, DMOS=3.65, median=4.0, ci_95%=±0.02706, p(colors)=0.16, p(brightness)=0.22, p(skintone)=0.07
-LU_WI       : nos=4313, DMOS=2.75, median=2.0, ci_95%=±0.03571, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.11
-LU_TM       : nos=5714, DMOS=3.87, median=4.0, ci_95%=±0.02355, p(colors)=0.17, p(brightness)=0.22, p(skintone)=0.08
-LU_JG       : nos=5803, DMOS=3.69, median=4.0, ci_95%=±0.02680, p(colors)=0.16, p(brightness)=0.21, p(skintone)=0.07
-WI_TM       : nos=4199, DMOS=3.91, median=4.0, ci_95%=±0.03251, p(colors)=0.17, p(brightness)=0.20, p(skintone)=0.11
-WI_JG       : nos=4078, DMOS=3.80, median=4.0, ci_95%=±0.03214, p(colors)=0.18, p(brightness)=0.20, p(skintone)=0.11
-TM_JG       : nos=5804, DMOS=2.70, median=2.0, ci_95%=±0.03067, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.08
+BA_MA     : nos=7168, DMOS=2.80, median=2.0, ci_95%=±0.02637, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.06
+BA_LU     : nos=7059, DMOS=2.74, median=2.0, ci_95%=±0.02600, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.07
+BA_WI     : nos=4988, DMOS=2.51, median=2.0, ci_95%=±0.03289, p(colors)=0.17, p(brightness)=0.17, p(skintone)=0.11
+BA_SU     : nos=7115, DMOS=3.77, median=4.0, ci_95%=±0.02298, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.08
+BA_DE     : nos=7146, DMOS=3.54, median=4.0, ci_95%=±0.02575, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.07
+IN_BA     : nos=6965, DMOS=3.61, median=4.0, ci_95%=±0.02420, p(colors)=0.16, p(brightness)=0.21, p(skintone)=0.06
+IN_MA     : nos=7132, DMOS=3.49, median=4.0, ci_95%=±0.02560, p(colors)=0.17, p(brightness)=0.20, p(skintone)=0.06
+IN_LU     : nos=7165, DMOS=3.37, median=4.0, ci_95%=±0.02903, p(colors)=0.16, p(brightness)=0.20, p(skintone)=0.07
+IN_WI     : nos=5312, DMOS=2.87, median=2.0, ci_95%=±0.03653, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.13
+IN_SU     : nos=7178, DMOS=3.94, median=4.0, ci_95%=±0.02334, p(colors)=0.17, p(brightness)=0.22, p(skintone)=0.07
+IN_DE     : nos=7188, DMOS=3.79, median=4.0, ci_95%=±0.02483, p(colors)=0.15, p(brightness)=0.23, p(skintone)=0.07
+MA_LU     : nos=7056, DMOS=2.97, median=3.0, ci_95%=±0.02785, p(colors)=0.16, p(brightness)=0.18, p(skintone)=0.06
+MA_WI     : nos=5149, DMOS=2.63, median=2.0, ci_95%=±0.03428, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.12
+MA_SU     : nos=7053, DMOS=3.84, median=4.0, ci_95%=±0.02191, p(colors)=0.16, p(brightness)=0.21, p(skintone)=0.07
+MA_DE     : nos=7212, DMOS=3.67, median=4.0, ci_95%=±0.02413, p(colors)=0.16, p(brightness)=0.21, p(skintone)=0.06
+LU_WI     : nos=5297, DMOS=2.75, median=2.0, ci_95%=±0.03447, p(colors)=0.17, p(brightness)=0.18, p(skintone)=0.10
+LU_SU     : nos=7054, DMOS=3.88, median=4.0, ci_95%=±0.02127, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.08
+LU_DE     : nos=7127, DMOS=3.70, median=4.0, ci_95%=±0.02427, p(colors)=0.17, p(brightness)=0.21, p(skintone)=0.07
+WI_SU     : nos=5153, DMOS=3.93, median=4.0, ci_95%=±0.02776, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.11
+WI_DE     : nos=4997, DMOS=3.80, median=4.0, ci_95%=±0.02693, p(colors)=0.18, p(brightness)=0.19, p(skintone)=0.10
+SU_DE     : nos=7066, DMOS=2.69, median=2.0, ci_95%=±0.02774, p(colors)=0.17, p(brightness)=0.19, p(skintone)=0.07
 
 --------- per-method bradley terry scores ---------
-TMobilerestore  : vote=3.64, color=2.81, brightness=3.78, skintone=2.51
-JGao            : vote=2.36, color=2.00, brightness=2.80, skintone=1.61
-BAseline        : vote=1.12, color=1.14, brightness=1.03, skintone=1.76
-MAqic           : vote=0.82, color=0.95, brightness=0.81, skintone=1.23
-LUt             : vote=0.71, color=0.78, brightness=0.70, skintone=0.68
-WIzard          : vote=0.43, color=0.35, brightness=0.53, skintone=0.13
-INputs          : vote=0.42, color=0.60, brightness=0.30, skintone=1.33
+SUmmer    : vote=3.73, color=2.91, brightness=3.85, skintone=2.33
+DEepview  : vote=2.39, color=2.03, brightness=2.81, skintone=1.56
+BAseline  : vote=1.11, color=1.13, brightness=1.03, skintone=1.73
+MAqic     : vote=0.81, color=0.93, brightness=0.80, skintone=1.25
+LUt       : vote=0.70, color=0.78, brightness=0.71, skintone=0.69
+WIzard    : vote=0.43, color=0.36, brightness=0.53, skintone=0.14
+INputs    : vote=0.41, color=0.57, brightness=0.30, skintone=1.37
