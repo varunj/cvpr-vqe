@@ -3,7 +3,7 @@ Official repository for the first Challenge on Video Quality Enhancement for Vid
 
 
 ## Setup
-### Data
+### 📂 Data
 To download individual subsets, please refer to the URLs on the [CodaLab webpage](https://codalab.lisn.upsaclay.fr/competitions/21291#learn_the_details-terms_and_conditions:~:text=%5B3%5D.-,Training,-data%20can%20be).
 ```
 mkdir data; cd data
@@ -30,7 +30,7 @@ wget https://ic3mi.z22.web.core.windows.net/vqe/VQA.ckpt
 wget https://ic3mi.z22.web.core.windows.net/vqe/DOVER.pth
 ```
 
-### Environment
+### 🛠️ Environment
 ```
 conda install -y mamba=1.3.1 -n base -c conda-forge
 conda create -n vqe python=3.8
@@ -39,7 +39,7 @@ mamba env update -f conda/env.gpu.yml
 ```
 
 
-## Baseline
+## 🧰 Baseline
 We provide a baseline (Windows only) solution so that participants can reproduce the AutoAdjust feature as currently shipped in Microsoft Teams.
 ```
 cd baseline
@@ -49,7 +49,7 @@ python baseline.py --dir_in <path to directory with input mp4 videos> --dir_out 
 ```
 
 
-## Training
+## 🧠 Training
 Note: The provided sample ImageVQEDataset() is implemented for images. Feel free to implement your own dataset for videos if your methodology is video based.
 
 p, A1, A2 = VQA(x1, x2, d1, d2) predicts the probability p(x1 better than x2) and also gives 11 auxiliary scores A=[a1 ... a11] for each x1 and x2. p and ai ∈ [0,1]. VQA model also expects di which is the fused DOVER score for xi.
@@ -63,7 +63,7 @@ python train_vqe.py --config-name=vqe dataset.path='G:/data' dataloader.multipro
 ```
 
 
-## Evaluation
+## 🔍 Evaluation
 ### Subjective
 Remember that final rankings will be based on P.910 scores. It is important to join the Slack workspace where organizers will provide instructions on how to submit the 3000 enhanced videos. The joining link can be found in the CodaLab forum (https://codalab.lisn.upsaclay.fr/forums/21235/).
 
@@ -90,4 +90,15 @@ The metric m used to rank is a combination of
 You can check your score offline by running:
 ```
 python codalab_scoring/score.py --results codalab_scoring/sample_submission
+```
+
+## 📄 Citation
+If you use our method or codes in your research, please cite:
+```
+@inproceedings{ntire2025vqe,
+  title={{NTIRE} 2025 Challenge on Video Quality Enhancement for Video Conferencing: Datasets, Methods and Results},
+  author={Varun Jain and Zongwei Wu and Quan Zou and Louis Florentin and Henrik Turbell and   Sandeep Siddhartha and Radu Timofte and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  year={2025}
+}
 ```
