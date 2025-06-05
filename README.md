@@ -2,7 +2,7 @@
 Official repository for the first Challenge on Video Quality Enhancement for Video Conferencing held at the NTIRE Workshop at CVPR 2025.
 
 
-## Setup
+## 🛠️ Setup
 ### 📂 Data
 To download individual subsets, please refer to the URLs on the [CodaLab webpage](https://codalab.lisn.upsaclay.fr/competitions/21291#learn_the_details-terms_and_conditions:~:text=%5B3%5D.-,Training,-data%20can%20be).
 ```
@@ -30,7 +30,7 @@ wget https://ic3mi.z22.web.core.windows.net/vqe/VQA.ckpt
 wget https://ic3mi.z22.web.core.windows.net/vqe/DOVER.pth
 ```
 
-### 🛠️ Environment
+### Environment
 ```
 conda install -y mamba=1.3.1 -n base -c conda-forge
 conda create -n vqe python=3.8
@@ -97,7 +97,7 @@ If you use our method or codes in your research, please cite:
 ```
 @inproceedings{ntire2025vqe,
   title={{NTIRE} 2025 Challenge on Video Quality Enhancement for Video Conferencing: Datasets, Methods and Results},
-  author={Varun Jain and Zongwei Wu and Quan Zou and Louis Florentin and Henrik Turbell and   Sandeep Siddhartha and Radu Timofte and others},
+  author={Varun Jain and Zongwei Wu and Quan Zou and Louis Florentin and Henrik Turbell and Sandeep Siddhartha and Radu Timofte and others},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
   year={2025}
 }
