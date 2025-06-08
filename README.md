@@ -93,7 +93,7 @@ python codalab_scoring/score.py --results codalab_scoring/sample_submission
 ```
 
 ## 📄 Citation
-If you use our method or codes in your research, please cite:
+If you use our method, data, or code in your research, please cite:
 ```
 @inproceedings{ntire2025vqe,
   title={{NTIRE} 2025 Challenge on Video Quality Enhancement for Video Conferencing: Datasets, Methods and Results},
