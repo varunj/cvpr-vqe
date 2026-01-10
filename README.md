@@ -69,7 +69,7 @@ Remember that final rankings will be based on P.910 scores. It is important to j
 
 It is important that all teams submit videos encoded with the same codec and pixel format. Please use the following code to render your submissions.
 ```
-target_fps= = 30
+target_fps = 30
 vid = sp.Popen(shlex.split(f'ffmpeg -y -s {w}x{h} -pixel_format bgr24 -f rawvideo -r {target_fps} -i pipe: -vcodec h264 -pix_fmt yuv420p -crf 18 "{path_video}"'), stdin=sp.PIPE, stdout=sp.DEVNULL, stderr=sp.STDOUT)
 for frame in frames:
     vid.stdin.write(frame.tobytes())
