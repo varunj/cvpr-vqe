@@ -52,7 +52,7 @@ python baseline.py --dir_in <path to directory with input mp4 videos> --dir_out 
 ## 🧠 Training
 Note: The provided sample ImageVQEDataset() is implemented for images. Feel free to implement your own dataset for videos if your methodology is video based.
 
-p, A1, A2 = VQA(x1, x2, d1, d2) predicts the probability p(x1 better than x2) and also gives 11 auxiliary scores A=[a1 ... a11] for each x1 and x2. p and ai ∈ [0,1]. VQA model also expects di which is the fused DOVER score for xi.
+p, A1, A2 = VQA(x1, x2, d1, d2) predicts the probability p(x2 better than x1) and also gives 11 auxiliary scores A=[a1 ... a11] for each x1 and x2. p and ai ∈ [0,1]. VQA model also expects di which is the fused DOVER score for xi.
 * {a1,a2,a3,a5,a6,a7,a8,a9,a10,a11} ∝ image_quality
 * a4 ∝ 1 / image_quality
 
